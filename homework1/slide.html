@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 900px;
+            height: 460px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .box{
+            width: 5400px;
+            height: 460px;
+            overflow: hidden;
+            animation: a 5s   infinite;
+        }
+        .boximg{
+        float: left;
+        width: 900px;
+        height: 460px;
+        }
+        @keyframes a{
+            0%{margin-left: 0px;}
+            20%{margin-left: -900px; }
+           40%{margin-left: -1800px;}
+            60%{margin-left: -2700px;}
+            80%{margin-left: -3600px;}
+            100%{margin-left: -4500px;}
+        }
+        .buttomleft{
+         position: absolute;
+         margin-left: 26.2%;
+         margin-top: -13%;
+         border-radius: 0 5px 5px 0;
+         font-size: 27px;
+         text-align: center;
+         color: #fff;
+        
+        }
+        .buttomleft:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        .buttomright{
+         position: absolute;
+          right:26.5%;
+         margin-top: -13%;
+         border-radius: 0 5px 5px 0;
+         font-size: 27px;
+         text-align: center;
+         background-color: #00000050;
+         color: #fff;
+        }
+        .buttomright:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+  <div class="box">
+   <img src="./轮播图img/1.jpg" alt="" class="boximg">
+    <img src="./轮播图img/2.jpg" alt="" class="boximg">
+    <img src="./轮播图img/3.webp" alt="" class="boximg">
+    <img src="./轮播图img/4.jpg" alt="" class="boximg">
+   <img src="./轮播图img/5.webp" alt="" class="boximg"> 
+    <img src="./轮播图img/6.webp" alt="" class="boximg">
+  
+  </div></main>
+  <div class="buttomleft">&lt;</div>
+  <div class="buttomright">&gt;</div>
+</body>
+</html>
